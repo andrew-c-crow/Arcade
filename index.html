@@ -1,0 +1,42 @@
+<html>
+  <head>
+
+<link rel="stylesheet" href="app.css"></link>
+  </head>
+<body>
+  <header>
+    <h1> Tic Tac Toe</h1>
+  </header>
+
+  <input type="text" id="name1" placeholder="Player One">
+  <button type="button" id="btn1">Play</button><br>
+
+  <input type="text" id="name2" placeholder="Player Two">
+  <button type="button" id="btn2">Play</button><br>
+
+  <input type="text" id="name3" placeholder="One Player">
+  <button type="button" id="btn3">Play Computer</button>
+
+  <p class="output" id="output1"></p>
+  <p class="output" id="output2"></p>
+<main>
+  <div id="board">
+  <div onclick="squareClick()" style="cursor: pointer" id="0"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="1"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="2"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="3"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="4"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="5"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="6"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="7"  class="box" data-cell>-</div>
+  <div onclick="squareClick()" style="cursor: pointer" id="8"  class="box" data-cell>-</div>
+</div>
+<div id="game-over-space" class="hidden">
+  <h2 id="game-over-message"></h2><br>
+  <button id="play-again">Play Again</button>
+</div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
